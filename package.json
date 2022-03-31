@@ -1,0 +1,52 @@
+{
+  "name": "java-node-compiler",
+  "version": "1.0.0",
+  "description": "To test the conversion ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint",
+    "start": "node index.js",
+    "build": "babel src -d dist",
+    "dev": "nodemon --exec babel-node index.js"
+  },
+  "author": "Samson Ajulor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abbeydigital/nibss-server/issues"
+  },
+  "homepage": "https://github.com/abbeydigital/nibss-server#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.3",
+    "express-rate-limit": "^6.3.0",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "mssql": "^6.2.3",
+    "node-fetch": "^2.6.7",
+    "sequelize": "^5.15.0",
+    "sequelize-cli": "^5.5.0",
+    "soap": "^0.43.0",
+    "underscore": "^1.9.1",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "eslint": "^6.2.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.1"
+  }
+}

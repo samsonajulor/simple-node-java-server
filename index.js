@@ -21,7 +21,7 @@ async function execute_java(command) {
   return { stdout, stderr };
 }
 
-app.get('/', async (req, res) => {
+app.get('/java-node', async (req, res) => {
   console.log('running java test');
   const run_java = await execute_java('java helloWorld');
   console.log('java output: ', run_java);

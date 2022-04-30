@@ -16,15 +16,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 async function execute_java(command) {
-  const { stdout, stderr } = await exec(command);
-  console.log('command output: ', stdout, 'command error: ', stderr);
+  const { stdout, stderr } = await exec(command, { cwd: './' });
+  // console.log('command output: ', stdout, 'command error: ', stderr);
   return { stdout, stderr };
 }
 
-app.get('/', async (req, res) => {
-  console.log('running java test');
+app.get('/java-node', async (req, res) => {
+  // console.log('running java test');
   const run_java = await execute_java('java helloWorld');
-  console.log('java output: ', run_java);
+  // console.log('java output: ', run_java);
 
   res.status(200).send({
     message: run_java,

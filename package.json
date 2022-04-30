@@ -8,7 +8,7 @@
     "lint": "eslint",
     "start": "node index.js",
     "build": "babel src -d dist",
-    "dev": "nodemon --exec babel-node index.js"
+    "dev": "nodemon --exec babel-node src/index.js"
   },
   "author": "Samson Ajulor",
   "license": "ISC",
